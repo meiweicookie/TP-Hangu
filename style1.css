@@ -1,0 +1,280 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #102746;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+
+
+/*HEADER*/
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 47px;
+}
+
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_item{
+    margin-right: 75px;
+}
+
+.header_item:last-child{
+    margin-right: 0px;
+}
+
+.header_link{
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.header_link:hover, .header_link:focus, .header_link:active{
+    opacity: 0.55;
+}
+
+
+
+/*INTRO*/
+
+.intro{
+    min-height: 100vh;
+    width: 100%;
+    background: url(image/background.svg) no-repeat center;
+    padding-top: 250px;
+}
+
+.intro_title{
+    max-width: 620px;
+    color: #FFF;
+    font-family: 'Lato';
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.intro_subtitle{
+    max-width: 610px;
+    color: #FFF;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.search-form_info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-form_field{
+    background: transparent url(image/circle.svg) no-repeat left 6px;
+    background-size: 20px;
+    width: 350px;
+    border: 0;
+    border-bottom: 2px solid white;
+    margin-right: 70px;
+    padding-left: 35px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFF;
+}
+
+.search-form_field::placeholder{
+    font-size: 22px;
+    font-weight: 400;
+    color: #FFF;
+    font-family: 'Lato';
+}
+
+.search-form_submit{
+    font-family: 'Lato';
+    padding: 13px 27px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFF;
+    background: #FF5C00;
+    border: 0;
+}
+
+.search-form_submit:hover, .search-form_submit:focus,
+.search-form_submit:active{
+    background: #c4581e;
+}
+
+
+
+/*BENEFITS*/
+
+.benefits{
+    margin-bottom: 130px;
+}
+
+.benefits_wrap{
+    max-width: 1400px;
+    background-color: #FFF;
+    margin: 0 auto;
+    box-shadow: 0px 2px 30px rgba(88, 88, 88, 0.509);
+    position: relative;
+}
+
+.benefits_title{
+    color: #102746;
+    font-family: 'Lato';
+    width: 100%;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    padding: 93px 100px 88px 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    background-color: #FFF;
+}
+
+.benefits_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 130px;
+    padding: 0px 100px;
+}
+
+.benefits_card{
+    grid-column: span 1;
+    margin-bottom: 100px;
+}
+
+.benefits_card-pic{
+    max-width: 80px;
+    margin-bottom: 26px;
+}
+
+.benefits_card-thumb{
+    display: block;
+}
+
+.benefits_card-title{
+    color: #102746;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 26px;
+}
+
+.benefits_card-desc{
+    color: #102746;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.benefits_card-more{
+    display: inline-block;
+    padding-right: 60px;
+    color: #FF5C00;
+    font-family: 'Lato';
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    background: url(image/arrow.svg) no-repeat 95% center;
+    transition: 0.2s all;
+}
+
+.benefits_card-more:hover, .benefits_card-more:focus{
+    background: url(image/arrow.svg) no-repeat right center;
+}
+
+
+
+/*FOOTER*/
+
+.footer{
+    background: #0E1D28;
+    padding: 120px 200px;
+}
+
+.footer_item{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_logo{
+    width: 50%;
+    margin-top: 40px;
+}
+
+.footer_nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.footer_menu-title{
+    color: #FFF;
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer_menu-link{
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer_menu-link:hover, .footer_menu-link:focus,
+.footer_menu-link:active{
+    opacity: 0.55;
+}
